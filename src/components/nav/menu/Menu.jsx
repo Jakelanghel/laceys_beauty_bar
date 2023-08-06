@@ -1,13 +1,13 @@
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { menuVariants } from "./variants/menuVariants";
 import { StyledMenu } from "./styles/Menu.Styled";
+import propTypes from "prop-types";
 
-const Menu = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  const variant = menuVariants(isMobile);
+const Menu = (props) => {
+  const { isMobile } = props;
   const MotionMenu = motion(StyledMenu);
+  const variant = menuVariants(isMobile);
 
   return (
     <MotionMenu
@@ -25,7 +25,7 @@ const Menu = () => {
         Home
       </NavLink>
       <NavLink
-        to="/services"
+        to="/lashes"
         className={({ isActive }) =>
           isActive ? "active nav-link" : "nav-link"
         }
@@ -33,15 +33,15 @@ const Menu = () => {
         Lashes
       </NavLink>
       <NavLink
-        to="/clothing"
+        to="/evebrows"
         className={({ isActive }) =>
           isActive ? "active nav-link" : "nav-link"
         }
       >
-        Evebrows
+        Eyebrows
       </NavLink>
       <NavLink
-        to="/clothing"
+        to="/skin"
         className={({ isActive }) =>
           isActive ? "active nav-link" : "nav-link"
         }
@@ -49,7 +49,7 @@ const Menu = () => {
         Skin care
       </NavLink>
       <NavLink
-        to="/clothing"
+        to="/waxing-tanning"
         className={({ isActive }) =>
           isActive ? "active nav-link" : "nav-link"
         }
@@ -66,6 +66,10 @@ const Menu = () => {
       </NavLink>
     </MotionMenu>
   );
+};
+
+Menu.propTypes = {
+  isMobile: propTypes.bool,
 };
 
 export default Menu;

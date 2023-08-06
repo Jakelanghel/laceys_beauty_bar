@@ -7,6 +7,7 @@ import locationIcon from "../assets/icons/location-icon.svg";
 import eyeIcon from "../assets/icons/mascara.png";
 import arrowRight from "../assets/icons/arrow-right.svg";
 import arrowLeft from "../assets/icons/arrow-left.svg";
+import closeIcon from "../assets/icons/x-solid.svg";
 
 // BACKGROUNDS
 import pinkBg from "../assets/backgrounds/bg_pinkDots.webp";
@@ -78,6 +79,7 @@ const images = {
   eyeIcon,
   arrowRight,
   arrowLeft,
+  closeIcon,
 
   // BACKGROUND
   pinkBg,
