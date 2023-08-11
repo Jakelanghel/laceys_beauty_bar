@@ -65,14 +65,9 @@ const Menu = (props) => {
       >
         Waxing/Tanning
       </NavLink>
-      <NavLink
-        to="/clothing"
-        className={({ isActive }) =>
-          isActive ? "active nav-link" : "nav-link"
-        }
-      >
-        Clothing
-      </NavLink>
+      <a href="https://www.facebook.com/threadandsew1/" className="nav-link">
+        Thread and sew
+      </a>
     </MotionMenu>
   );
 };

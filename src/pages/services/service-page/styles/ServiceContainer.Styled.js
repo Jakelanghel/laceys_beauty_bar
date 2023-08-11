@@ -9,9 +9,6 @@ export const StyledServiceContainer = styled.main`
   padding: 1rem;
   padding-bottom: 5rem;
 
-  .container-copy {
-  }
-
   .container-copy,
   .container-services {
     max-width: 450px;
@@ -35,6 +32,7 @@ export const StyledServiceContainer = styled.main`
   }
 
   .copy-title {
+    text-transform: capitalize;
     width: 200px;
     margin: 0 auto;
     margin-bottom: 1rem;
@@ -50,6 +48,7 @@ export const StyledServiceContainer = styled.main`
 
   .service-title {
     font-size: 1.35rem;
+    text-transform: capitalize;
   }
 
   .service-title,
@@ -64,6 +63,15 @@ export const StyledServiceContainer = styled.main`
 
   .logo {
     width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
   }
 
   @media (min-width: 1200px) {
@@ -88,5 +96,13 @@ export const StyledServiceContainer = styled.main`
     .container-carousel {
       width: 100%;
     }
+
+    /* .container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10rem;
+    } */
   }
 `;

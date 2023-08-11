@@ -36,6 +36,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
+        font-size: 1.15rem;
         font-family: 'Open Sans', sans-serif;  
         color: var(--primary-font);
     }

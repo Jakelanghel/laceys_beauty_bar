@@ -1,7 +1,7 @@
 import { Route } from "react-router-dom";
 import { servicesData } from "../services-data/servicesData";
-import MultiServicePage from "../multi-service-page/MultiServicePage";
-import ServicePage from "../service-page/ServicePage";
+import MultiServicePage from "../service-page/multi-service-page/MultiServicePage";
+import ServicePage from "../service-page/single-service-page/ServicePage";
 
 export const renderServicePages = (isMobile) => {
   return servicesData.map((service) => {

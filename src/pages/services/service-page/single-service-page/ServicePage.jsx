@@ -1,6 +1,6 @@
-import { images } from "../../../constants/images";
-import { StyledServiceContainer } from "./styles/ServiceContainer.Styled";
-import SwiperCarousel from "../../../components/carousel/SwiperCarousel";
+import { images } from "../../../../constants/images";
+import { StyledServiceContainer } from "../styles/ServiceContainer.Styled";
+import SwiperCarousel from "../../../../components/carousel/SwiperCarousel";
 import propTypes from "prop-types";
 import { nanoid } from "nanoid";
 

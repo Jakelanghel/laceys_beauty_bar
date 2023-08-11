@@ -30,7 +30,6 @@ export const StyledProfile = styled.div`
   }
 
   .card {
-    font-size: 1rem;
     margin: 2rem auto;
     border-radius: 15px;
     padding: 2rem 1rem;
