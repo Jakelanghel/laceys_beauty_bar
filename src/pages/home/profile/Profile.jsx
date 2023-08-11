@@ -18,7 +18,7 @@ const Profile = ({ bio, inverted, img, name }) => {
 
         <div className="card bs-pink">
           <h2>{name}</h2>
-          <p>{bioElements}</p>
+          {bioElements}
         </div>
       </div>
     </MotionProfile>

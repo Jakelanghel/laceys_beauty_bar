@@ -39,7 +39,7 @@ const Menu = (props) => {
         Lashes
       </NavLink>
       <NavLink
-        to="/evebrows"
+        to="/eyebrows"
         className={({ isActive }) =>
           isActive ? "active nav-link" : "nav-link"
         }
