@@ -7,13 +7,26 @@ import Menu from "./menu/Menu";
 import MotionImg from "../motion/img/MotionImg";
 import propTypes from "prop-types";
 
-const Nav = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const { isMobile } = props;
+const Nav = ({ isMobile }) => {
+  const [isOpen, setIsOpen] = useState(isMobile ? false : true);
 
   const toggleMenu = () => {
     setIsOpen((oldState) => !oldState);
   };
+
+  const mobileMenu = (
+    <AnimatePresence mode="wait">
+      {isOpen ? (
+        <Menu key="menu" isMobile={isMobile} setIsOpen={setIsOpen} />
+      ) : null}
+    </AnimatePresence>
+  );
+
+  const desktopMenu = (
+    <Menu key="menu" isMobile={isMobile} setIsOpen={setIsOpen} />
+  );
+
+  const renderedMenu = isMobile ? mobileMenu : desktopMenu;
 
   return (
     <StyledNav>
@@ -42,18 +55,8 @@ const Nav = (props) => {
             />
           )}
         </AnimatePresence>
-        {/* {renderedMenuIcon} */}
-
-        {/* <MotionImg
-          isOpen={isOpen}
-          openIconSrc={images.menuIcon}
-          closeIconSrc={images.closeIcon}
-          alt="toggle-menu"
-        /> */}
       </div>
-      <AnimatePresence mode="wait">
-        {isOpen ? <Menu key="menu" isMobile={isMobile} /> : null}
-      </AnimatePresence>
+      {renderedMenu}
     </StyledNav>
   );
 };

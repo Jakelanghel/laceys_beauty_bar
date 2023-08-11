@@ -3,9 +3,11 @@ import { images } from "../../../../constants/images";
 
 export const StyledProfile = styled.div`
   width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+
   .img-container {
     width: 100%;
-    max-width: 550px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -16,7 +18,6 @@ export const StyledProfile = styled.div`
   }
 
   .profile-img {
-    width: 100%;
     width: 315px;
     height: 315px;
     border-radius: 50%;
@@ -29,7 +30,7 @@ export const StyledProfile = styled.div`
   }
 
   .card {
-    max-width: 550px;
+    font-size: 1rem;
     margin: 2rem auto;
     border-radius: 15px;
     padding: 2rem 1rem;
@@ -37,7 +38,9 @@ export const StyledProfile = styled.div`
   }
 
   h2 {
+    font-size: 1.75rem;
     letter-spacing: 1px;
+    color: var(--hot-pink);
     text-transform: capitalize;
   }
 
@@ -49,119 +52,48 @@ export const StyledProfile = styled.div`
     margin-bottom: 1rem;
   }
 
-  /* @media screen and (min-width: 400px) {
-    .profile-img {
-      width: 350px;
-      height: 350px;
-    }
-
-    .img-container {
-      width: 90%;
-    }
-
-    .container-card {
-      width: 90%;
-    }
-  }
-
-  @media screen and (min-width: 950px) {
-    max-width: 1500px;
-    margin: 8rem auto;
-
-    .box-shadow-1 {
-      border-radius: 15px;
-
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    }
-
-    .img-container {
-      max-width: 450px;
-      margin: 0;
-      width: 47%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 15px;
-    }
-
-    .row {
-      width: 100%;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      gap: 3rem;
-      align-items: center;
-    }
-
-    .inverted-container {
-      .card {
-        order: 1;
-      }
-
-      .img-container {
-        order: 2;
-      }
-    }
-
-    .container-card {
-      width: 47%;
-      max-width: 400px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 0;
-      padding: 3rem 0;
-      border-radius: 15px;
-    }
-  }
-
-  @media screen and (min-width: 1100px) {
-    .row {
-      gap: 8rem;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    .img-container {
-      padding: 2rem;
-      width: 47%;
-      border-radius: 15px;
-    }
-
+  @media (min-width: 800px) {
+    max-width: 500px;
     .profile-img {
       width: 400px;
       height: 400px;
     }
+
+    h2 {
+      font-size: 2.25rem;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      font-size: 1.15rem;
+      line-height: 2rem;
+      letter-spacing: 1px;
+      padding: 2rem 3rem;
+    }
   }
 
-  @media screen and (min-width: 1500px) {
+  @media (min-width: 1200px) {
+    max-width: 90%;
+
     .row {
-      gap: 12rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .inverted-container {
+      flex-direction: row-reverse;
     }
 
     .img-container {
-      max-width: 550px;
-      padding: 3rem;
-      width: 47%;
-      border-radius: 15px;
-    }
-
-    .profile-img {
-      width: 450px;
-      height: 450px;
-    }
-
-    .container-card {
+      width: 45%;
       max-width: 500px;
-
-      padding: 3rem 0;
-
-      .card {
-        max-width: 550px;
-        padding: 2rem 1.5rem;
-      }
     }
-  } */
+
+    .card {
+      width: 45%;
+      max-width: 600px;
+    }
+  }
 `;

@@ -5,9 +5,13 @@ import { StyledMenu } from "./styles/Menu.Styled";
 import propTypes from "prop-types";
 
 const Menu = (props) => {
-  const { isMobile } = props;
+  const { isMobile, setIsOpen } = props;
   const MotionMenu = motion(StyledMenu);
   const variant = menuVariants(isMobile);
+
+  const handleClick = () => {
+    setIsOpen(false);
+  };
 
   return (
     <MotionMenu
@@ -21,6 +25,7 @@ const Menu = (props) => {
         className={({ isActive }) =>
           isActive ? "active nav-link" : "nav-link"
         }
+        onClick={handleClick}
       >
         Home
       </NavLink>
@@ -29,6 +34,7 @@ const Menu = (props) => {
         className={({ isActive }) =>
           isActive ? "active nav-link" : "nav-link"
         }
+        onClick={handleClick}
       >
         Lashes
       </NavLink>
@@ -37,6 +43,7 @@ const Menu = (props) => {
         className={({ isActive }) =>
           isActive ? "active nav-link" : "nav-link"
         }
+        onClick={handleClick}
       >
         Eyebrows
       </NavLink>
@@ -45,6 +52,7 @@ const Menu = (props) => {
         className={({ isActive }) =>
           isActive ? "active nav-link" : "nav-link"
         }
+        onClick={handleClick}
       >
         Skin care
       </NavLink>
@@ -53,6 +61,7 @@ const Menu = (props) => {
         className={({ isActive }) =>
           isActive ? "active nav-link" : "nav-link"
         }
+        onClick={handleClick}
       >
         Waxing/Tanning
       </NavLink>
@@ -70,6 +79,7 @@ const Menu = (props) => {
 
 Menu.propTypes = {
   isMobile: propTypes.bool,
+  setIsOpen: propTypes.func,
 };
 
 export default Menu;

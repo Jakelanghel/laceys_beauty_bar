@@ -13,6 +13,10 @@ export const StyledNav = styled.nav`
     align-items: center;
   }
 
+  .nav-link {
+    text-decoration: none;
+  }
+
   .eye-icon {
     width: 30px;
   }
@@ -24,11 +28,6 @@ export const StyledNav = styled.nav`
     color: var(--hot-pink);
   }
 
-  .nav-link {
-    text-decoration: none;
-  }
-
-  .nav-link:hover,
   .container-menu-icon:hover,
   .container-brand:hover {
     cursor: pointer;
@@ -49,5 +48,20 @@ export const StyledNav = styled.nav`
 
   .close-icon {
     width: 25px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 1rem 2rem;
+    .container-menu-icon {
+      display: none;
+    }
+
+    .eye-icon {
+      width: 40px;
+    }
+
+    .brand {
+      font-size: 1.25rem;
+    }
   }
 `;

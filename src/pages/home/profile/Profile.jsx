@@ -4,6 +4,11 @@ import propTypes from "prop-types";
 
 const Profile = ({ bio, inverted, img, name }) => {
   const MotionProfile = motion(StyledProfile);
+  const bioElements = bio.map((p) => (
+    <p key={p} className="margin-btm">
+      {p}
+    </p>
+  ));
   return (
     <MotionProfile>
       <div className={inverted ? "inverted-container row" : "row"}>
@@ -13,7 +18,7 @@ const Profile = ({ bio, inverted, img, name }) => {
 
         <div className="card bs-pink">
           <h2>{name}</h2>
-          <p>{bio}</p>
+          <p>{bioElements}</p>
         </div>
       </div>
     </MotionProfile>

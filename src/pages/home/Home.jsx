@@ -1,16 +1,37 @@
 import { StyledHome } from "./styles/Home.Styled";
 import { data } from "./data/data";
 import { renderProfiles } from "./render/renderProfiles";
+import { images } from "../../constants/images";
 import Hero from "./hero/Hero";
+import SwiperCarousel from "../../components/carousel/SwiperCarousel";
+import propTypes from "prop-types";
 
-const Home = () => {
+const Home = ({ isMobile }) => {
   const profileElements = renderProfiles(data);
+  const imgArr = [
+    images.shopImg_1,
+    images.shopImg_2,
+    images.shopImg_3,
+    images.shopImg_4,
+    images.shopImg_5,
+    images.shopImg_6,
+    images.shopImg_7,
+    images.shopImg_8,
+  ];
   return (
-    <StyledHome>
+    <StyledHome className="pd">
       <Hero />
-      <div className="container-profiles">{profileElements}</div>
+      <SwiperCarousel isMobile={isMobile} imgArr={imgArr} />
+      <div className="container-profiles">
+        <h4 className="profiles-title">About Us</h4>
+        {profileElements}
+      </div>
     </StyledHome>
   );
+};
+
+Home.propTypes = {
+  isMobile: propTypes.bool,
 };
 
 export default Home;

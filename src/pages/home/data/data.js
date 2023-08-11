@@ -8,6 +8,7 @@ export const data = [
     bar. I recently opened the shop in December of 2021 and I've been
     practicing the trade for 4 years. I studied the Esthetics course
     at North Hills Beauty Academy and obtained my Esthetician License.`,
+
       `I've always had a passion for the Beauty Industry and making
     others look and feel their absolute best! I love having a
     profession that I truly enjoy! I cherish the opportunity that I
@@ -16,7 +17,7 @@ export const data = [
     about your beauty desires!`,
     ],
     img: images.imgLacey,
-    inverted: true,
+    inverted: false,
   },
   {
     name: "cailyn",
@@ -28,7 +29,7 @@ export const data = [
     amazing lash technician and we're so happy to have her!`,
     ],
     img: images.imgCailyn,
-    inverted: false,
+    inverted: true,
   },
   {
     name: "sydni",
@@ -40,6 +41,6 @@ export const data = [
     to have her!`,
     ],
     img: images.imgSydni,
-    inverted: true,
+    inverted: false,
   },
 ];

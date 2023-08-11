@@ -6,7 +6,7 @@ export const useSetView = () => {
   // Update the isMobile state on window resize
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 950);
+      setIsMobile(window.innerWidth < 1200);
     };
 
     window.addEventListener("resize", handleResize);

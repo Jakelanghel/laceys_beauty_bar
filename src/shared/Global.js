@@ -13,18 +13,40 @@ export const GlobalStyles = createGlobalStyle`
         --txt-grey: #808080;
         --hot-pink: #ff69b4;
         --light-pink: rgba(219, 90, 186, .5);
+        /* --primary-font: rgba(24, 24, 26, 1); */
+        --primary-font: rgba(40, 43, 46, 1);
 
     }
+
     * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
     }
 
+    img {
+        display: block;
+    }
+
+    #root, 
+    body, 
+    html, 
+    .app {
+        height: 100%;
+    }
+
     body {
-        font-family: 'Open Sans', sans-serif;    }
+        font-family: 'Open Sans', sans-serif;  
+        color: var(--primary-font);
+    }
 
     .app {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pd {
+        padding: 0 1rem
     }
 
     .filter-pink {
@@ -45,10 +67,11 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     .bs-blue {
-        box-shadow: rgba(3, 247, 235, 0.4) 0px 8px 24px;
+        box-shadow: rgba(3, 247, 235, 0.4) 0px 8px 35px;
     }
+    
     .bs-pink {
-        box-shadow: rgba(255, 96, 181, 0.4) 0px 8px 24px;
+        box-shadow: rgba(255, 96, 181, 0.4) 0px 8px 35px;
     }
 
     .filter-white {

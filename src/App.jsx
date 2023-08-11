@@ -2,6 +2,7 @@ import { GlobalStyles } from "./shared/Global";
 import { useSetView } from "./hooks/useSetView";
 import Router from "./router/Router";
 import Nav from "./components/nav/Nav";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const isMobile = useSetView();
@@ -11,7 +12,8 @@ function App() {
       <GlobalStyles />
       <div className="app">
         <Nav isMobile={isMobile} />
-        <Router />
+        <Router isMobile={isMobile} />
+        <Footer />
       </div>
     </>
   );
