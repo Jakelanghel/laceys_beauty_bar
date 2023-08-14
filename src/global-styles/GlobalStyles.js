@@ -79,4 +79,28 @@ export const GlobalStyles = createGlobalStyle`
         filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(138deg) brightness(103%) contrast(102%);
     }
 
+
+
+    @media (min-width: 1200px) {
+        body {
+            font-size: 1.25rem;
+            font-family: 'Open Sans', sans-serif;  
+            color: var(--primary-font);
+        }
+
+        .pd {
+                padding: 0 8rem;
+            }
+    }
+
+    @media (min-width: 1400px) {
+        .pd {
+                padding: 0 10rem;
+            }
+    }
+    
+    
+
+    
+
 `;

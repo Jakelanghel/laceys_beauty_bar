@@ -66,7 +66,7 @@ const Menu = (props) => {
         Waxing/Tanning
       </NavLink>
       <a href="https://www.facebook.com/threadandsew1/" className="nav-link">
-        Thread and sew
+        Clothing
       </a>
     </MotionMenu>
   );

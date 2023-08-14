@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { StyledNav } from "./styles/Nav.Styled";
 import { images } from "../../constants/images";
 import Menu from "./menu/Menu";
-import MotionImg from "../motion/img/MotionImg";
+import AnimatedImg from "../motion/img/AnimatedImg";
 import propTypes from "prop-types";
 
 const Nav = ({ isMobile }) => {
@@ -38,7 +38,7 @@ const Nav = ({ isMobile }) => {
       <div className="container-menu-icon filter-pink" onClick={toggleMenu}>
         <AnimatePresence mode="wait">
           {isOpen ? (
-            <MotionImg
+            <AnimatedImg
               key="closeIcon"
               isOpen={isOpen}
               src={images.closeIcon}
@@ -46,7 +46,7 @@ const Nav = ({ isMobile }) => {
               imgClass="close-icon"
             />
           ) : (
-            <MotionImg
+            <AnimatedImg
               key="openIcon"
               isOpen={isOpen}
               src={images.menuIcon}

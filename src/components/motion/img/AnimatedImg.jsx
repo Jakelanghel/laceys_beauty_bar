@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { iconVariants } from "./imgVariants";
+import { iconVariants } from "./variants/imgVariants";
 import propTypes from "prop-types";
 
-const MotionImg = ({ src, alt, imgClass }) => {
+const AnimatedImg = ({ src, alt, imgClass }) => {
   const variants = iconVariants(imgClass);
 
   return (
@@ -18,10 +18,10 @@ const MotionImg = ({ src, alt, imgClass }) => {
   );
 };
 
-MotionImg.propTypes = {
+AnimatedImg.propTypes = {
   src: propTypes.string,
   alt: propTypes.string,
   imgClass: propTypes.string,
 };
 
-export default MotionImg;
+export default AnimatedImg;

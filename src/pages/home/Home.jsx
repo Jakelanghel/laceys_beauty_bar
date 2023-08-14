@@ -5,6 +5,7 @@ import { images } from "../../constants/images";
 import Hero from "./hero/Hero";
 import SwiperCarousel from "../../components/carousel/SwiperCarousel";
 import propTypes from "prop-types";
+import AnimatedPage from "../../components/motion/page/AnimatedPage";
 
 const Home = ({ isMobile }) => {
   const profileElements = renderProfiles(data);
@@ -19,14 +20,16 @@ const Home = ({ isMobile }) => {
     images.shopImg_8,
   ];
   return (
-    <StyledHome className="pd">
-      <Hero />
-      <SwiperCarousel isMobile={isMobile} imgArr={imgArr} />
-      <div className="container-profiles">
-        <h4 className="profiles-title">About Us</h4>
-        {profileElements}
-      </div>
-    </StyledHome>
+    <AnimatedPage>
+      <StyledHome>
+        <Hero />
+        <SwiperCarousel isMobile={isMobile} imgArr={imgArr} />
+        <div className="container-profiles">
+          <h4 className="profiles-title">About Us</h4>
+          {profileElements}
+        </div>
+      </StyledHome>
+    </AnimatedPage>
   );
 };
 

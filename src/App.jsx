@@ -1,4 +1,4 @@
-import { GlobalStyles } from "./shared/Global";
+import { GlobalStyles } from "./global-styles/GlobalStyles";
 import { useSetView } from "./hooks/useSetView";
 import Router from "./router/Router";
 import Nav from "./components/nav/Nav";

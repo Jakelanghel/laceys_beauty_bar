@@ -70,7 +70,7 @@ export const StyledHero = styled.div`
   }
 
   @media (min-width: 1200px) {
-    max-width: 1200px;
+    max-width: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,7 +100,7 @@ export const StyledHero = styled.div`
       h1,
       h2,
       h3 {
-        font-size: 2rem;
+        font-size: 1.75rem;
       }
       margin: 3.5rem 0;
     }
@@ -112,7 +112,8 @@ export const StyledHero = styled.div`
     }
   }
 
-  @media (min-width: 1400px) {
+  @media (min-width: 1470px) {
+    max-width: 1200px;
     .container-slogan {
       h1,
       h2,

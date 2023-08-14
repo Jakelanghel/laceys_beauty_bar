@@ -3,7 +3,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { images } from "../../constants/images";
 import { nanoid } from "nanoid";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { StyledSwiperCarousel } from "./SwiperCarousel.Styled";
+import { StyledSwiperCarousel } from "./styles/SwiperCarousel.Styled";
 import propTypes from "prop-types";
 
 // Import Swiper styles
