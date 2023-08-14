@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import propTypes from "prop-types";
-import { pageVariants } from "./pageVariants";
+import { pageVariants } from "./variants/pageVariants";
 
-// Your component using the animation
 const AnimatedPage = ({ children }) => {
   return (
     <motion.div

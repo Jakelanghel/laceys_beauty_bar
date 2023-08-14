@@ -1,6 +1,6 @@
 import { StyledServiceContainer } from "../styles/ServiceContainer.Styled";
-import { renderServiceElements } from "./render/render-service-elements/renderServiceElements";
-import { renderDetailElements } from "./render/render-detail-elements/renderDetailElements";
+import { renderServiceElements } from "../render/render-service-elements/renderServiceElements";
+import { renderDetailElements } from "../render/render-detail-elements/renderDetailElements";
 import { images } from "../../../../constants/images";
 
 import AnimatedPage from "../../../../components/motion/page/AnimatedPage";

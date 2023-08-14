@@ -1,6 +1,6 @@
 import { StyledHome } from "./styles/Home.Styled";
-import { data } from "./data/data";
 import { renderProfiles } from "./render/renderProfiles";
+import { data } from "./data/data";
 import { images } from "../../constants/images";
 import Hero from "./hero/Hero";
 import SwiperCarousel from "../../components/carousel/SwiperCarousel";

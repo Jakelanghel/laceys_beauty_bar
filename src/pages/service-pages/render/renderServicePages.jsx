@@ -1,9 +1,9 @@
 import { Route } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import { servicesData } from "../services-data/servicesData";
+import { nanoid } from "nanoid";
 import MultiServicePage from "../service-page/multi-service-page/MultiServicePage";
 import ServicePage from "../service-page/single-service-page/ServicePage";
-import { AnimatePresence } from "framer-motion";
-import { nanoid } from "nanoid";
 
 export const renderServicePages = (isMobile) => {
   return servicesData.map((service) => {

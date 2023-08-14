@@ -1,27 +1,13 @@
-import { images } from "../../../../constants/images";
 import { StyledServiceContainer } from "../styles/ServiceContainer.Styled";
-import propTypes from "prop-types";
+import { renderServiceElements } from "../render/render-service-elements/renderServiceElements";
+import { images } from "../../../../constants/images";
+
 import AnimatedPage from "../../../../components/motion/page/AnimatedPage";
+import propTypes from "prop-types";
 
 const MultiServicePage = ({ service }) => {
-  const waxingServices = service.services[0].services.map((s) => {
-    return (
-      <div key={`service ${s.title}`} className="container-service">
-        <h2 className="service-title">{s.title}</h2>
-        <p className="description">{s.description}</p>
-        <p className="price">{s.price}</p>
-      </div>
-    );
-  });
-  const tanningServices = service.services[1].services.map((s) => {
-    return (
-      <div key={`service ${s.title}`} className="container-service">
-        <h2 className="service-title">{s.title}</h2>
-        <p className="description">{s.description}</p>
-        <p className="price">{s.price}</p>
-      </div>
-    );
-  });
+  const waxingServices = renderServiceElements(service);
+  const tanningServices = renderServiceElements(service);
 
   return (
     <AnimatedPage>
