@@ -11,8 +11,8 @@ export const StyledHero = styled.div`
   h1,
   h2,
   h3 {
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 400;
   }
 
   .container-contact {
@@ -34,11 +34,12 @@ export const StyledHero = styled.div`
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    font-size: 0.95rem;
   }
 
   .address-icon,
   .phone-icon {
-    width: 15px;
+    width: 13px;
   }
 
   .container-logo {
@@ -55,6 +56,9 @@ export const StyledHero = styled.div`
 
   span {
     color: var(--hot-pink);
+    font-family: "Charmonman", cursive;
+    font-size: 2rem;
+    font-weight: 700;
   }
 
   @media (min-width: 800px) {
@@ -65,7 +69,7 @@ export const StyledHero = styled.div`
     h1,
     h2,
     h3 {
-      font-size: 2rem;
+      font-size: 2.25rem;
     }
   }
 

@@ -1,6 +1,7 @@
 import { nanoid } from "nanoid";
 
 export const renderServiceElements = (arr) => {
+  console.log(arr.services);
   return arr.services.map((s) => (
     <div key={nanoid()} className="container-service">
       <h2 className="service-title">{s.title}</h2>

@@ -6,8 +6,8 @@ import AnimatedPage from "../../../../components/motion/page/AnimatedPage";
 import propTypes from "prop-types";
 
 const MultiServicePage = ({ service }) => {
-  const waxingServices = renderServiceElements(service);
-  const tanningServices = renderServiceElements(service);
+  const waxingServices = renderServiceElements(service.services[0]);
+  const tanningServices = renderServiceElements(service.services[1]);
 
   return (
     <AnimatedPage>

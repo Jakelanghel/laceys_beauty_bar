@@ -13,8 +13,7 @@ export const GlobalStyles = createGlobalStyle`
         --txt-grey: #808080;
         --hot-pink: #ff69b4;
         --light-pink: rgba(219, 90, 186, .5);
-        /* --primary-font: rgba(24, 24, 26, 1); */
-        --primary-font: rgba(40, 43, 46, 1);
+        --primary-font: rgba(40, 43, 46, .75);
 
     }
 
@@ -54,6 +53,11 @@ export const GlobalStyles = createGlobalStyle`
         filter: invert(59%) sepia(11%) saturate(6756%) hue-rotate(299deg) brightness(106%) contrast(101%);
     }
 
+    .filter-white {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(138deg) brightness(103%) contrast(102%);
+    }
+
+
     .bs-1 {
         box-shadow:  rgba(3, 247, 235, 0.4) 12px -5px 25px 1px,
                      rgba(255, 96, 181, 0.4) 12px 10px 25px 1px,
@@ -75,16 +79,13 @@ export const GlobalStyles = createGlobalStyle`
         box-shadow: rgba(255, 96, 181, 0.4) 0px 8px 35px;
     }
 
-    .filter-white {
-        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(138deg) brightness(103%) contrast(102%);
-    }
+   
 
 
 
     @media (min-width: 1200px) {
         body {
             font-size: 1.25rem;
-            font-family: 'Open Sans', sans-serif;  
             color: var(--primary-font);
         }
 

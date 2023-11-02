@@ -9,7 +9,7 @@ export const StyledBookNowBtn = styled.button`
   background-color: var(--hot-pink);
   padding: 1rem 2rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
 
   &:hover {
     scale: 1.15;

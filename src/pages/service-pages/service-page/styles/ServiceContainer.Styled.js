@@ -10,8 +10,7 @@ export const StyledServiceContainer = styled.main`
 
   .container-copy,
   .container-services {
-    max-width: 450px;
-
+    max-width: 400px;
     margin: 0 auto;
     text-align: center;
     border-radius: 15px;
@@ -26,7 +25,7 @@ export const StyledServiceContainer = styled.main`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .copy-title,
@@ -36,11 +35,12 @@ export const StyledServiceContainer = styled.main`
   }
 
   .copy-title {
+    font-family: "Charmonman", cursive;
+    font-size: 2.75rem;
     text-transform: capitalize;
-    width: 200px;
+    width: 300px;
     margin: 0 auto;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
     border-bottom: solid 2px var(--hot-pink);
   }
 
@@ -51,6 +51,8 @@ export const StyledServiceContainer = styled.main`
   }
 
   .service-title {
+    max-width: 225px;
+    margin: 0 auto;
     font-size: 1.35rem;
     text-transform: capitalize;
   }
@@ -85,10 +87,13 @@ export const StyledServiceContainer = styled.main`
   }
 
   @media (min-width: 1200px) {
+    max-width: 1100px;
+    margin: 0 auto;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 3rem;
 
     .container-copy,
     .container-services {
@@ -97,7 +102,6 @@ export const StyledServiceContainer = styled.main`
     }
 
     .container-copy {
-      max-width: 500px;
       line-height: 2.25rem;
     }
 
@@ -137,21 +141,6 @@ export const StyledServiceContainer = styled.main`
       .container-services {
         order: 1;
       }
-    }
-  }
-
-  @media (min-width: 1600px) {
-    max-width: 1200px;
-    margin: 0 auto;
-
-    .container-copy,
-    .container-services {
-      max-width: 550px;
-      padding: 2rem 1rem;
-    }
-    .container-services {
-      max-width: 400px;
-      font-size: 1.15rem;
     }
   }
 `;

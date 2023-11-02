@@ -52,6 +52,8 @@ export const StyledNav = styled.nav`
 
   @media screen and (min-width: 1200px) {
     padding: 1rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
     .container-menu-icon {
       display: none;
     }

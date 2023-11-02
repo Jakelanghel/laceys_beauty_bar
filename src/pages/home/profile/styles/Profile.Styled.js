@@ -37,7 +37,9 @@ export const StyledProfile = styled.div`
   }
 
   h2 {
-    font-size: 1.75rem;
+    font-family: "Charmonman", cursive;
+    font-size: 2.25rem;
+    font-weight: 700;
     letter-spacing: 1px;
     color: var(--hot-pink);
     text-transform: capitalize;
@@ -68,7 +70,7 @@ export const StyledProfile = styled.div`
       font-size: 1.15rem;
       line-height: 2rem;
       letter-spacing: 1px;
-      padding: 2rem 3rem;
+      padding: 3rem;
     }
   }
 

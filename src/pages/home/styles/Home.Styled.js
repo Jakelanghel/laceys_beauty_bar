@@ -13,12 +13,14 @@ export const StyledHome = styled.main`
 
   .profiles-title {
     text-align: center;
-    color: var(--hot-pink);
-    border-bottom: solid 5px var(--hot-pink);
     font-size: 3.5rem;
+    font-weight: 700;
+    font-family: "Charmonman", cursive;
+    color: var(--hot-pink);
     padding: 0 1rem;
     padding-bottom: 0.5rem;
     margin: 0 auto;
+    border-bottom: solid 2px var(--hot-pink);
   }
 
   @media (min-width: 1200px) {

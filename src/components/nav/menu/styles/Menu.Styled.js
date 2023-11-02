@@ -19,8 +19,9 @@ export const StyledMenu = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Charmonman", cursive;
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--hot-pink);
     text-decoration: none;
     text-transform: capitalize;
@@ -33,9 +34,13 @@ export const StyledMenu = styled.div`
   }
 
   .active {
+    font-size: 2.25rem;
     font-weight: 700;
-    /* border-bottom: solid 1px var(--hot-pink); */
-    /* border-top: solid 1px var(--hot-pink); */
+    border-bottom: solid 1px var(--hot-pink);
+  }
+
+  .active:hover {
+    transform: none;
   }
 
   .close-icon {
