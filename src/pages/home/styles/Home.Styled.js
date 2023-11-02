@@ -30,6 +30,7 @@ export const StyledHome = styled.main`
 
     .container-profiles {
       margin: 8rem 0;
+      gap: 10rem;
     }
   }
 `;

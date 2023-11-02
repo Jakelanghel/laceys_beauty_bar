@@ -14,14 +14,16 @@ const ServicePage = ({ service, isMobile }) => {
   return (
     <AnimatedPage>
       <StyledServiceContainer>
-        <div className="container-copy bs-1">
-          <h1 className="copy-title">{service.title}</h1>
-          <div>{detailElement}</div>
-        </div>
+        <div className="container">
+          <div className="container-copy bs-1">
+            <h1 className="copy-title">{service.title}</h1>
+            <div>{detailElement}</div>
+          </div>
 
-        <div className="container-services bs-1">
-          <img src={images.logoWhite} alt="logo" className="logo" />
-          {serviceElements}
+          <div className="container-services bs-1">
+            <img src={images.logoWhite} alt="logo" className="logo" />
+            {serviceElements}
+          </div>
         </div>
 
         <div className="container-carousel">

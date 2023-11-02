@@ -84,6 +84,8 @@ export const StyledHero = styled.div`
 
     .contact-link {
       justify-content: flex-start;
+      font-size: 1rem;
+      letter-spacing: 1px;
     }
 
     .container-logo {
@@ -107,6 +109,13 @@ export const StyledHero = styled.div`
         font-size: 1.75rem;
       }
       margin: 3.5rem 0;
+    }
+
+    span {
+      color: var(--hot-pink);
+      font-family: "Charmonman", cursive;
+      font-size: 2.5rem;
+      font-weight: 700;
     }
 
     .container {

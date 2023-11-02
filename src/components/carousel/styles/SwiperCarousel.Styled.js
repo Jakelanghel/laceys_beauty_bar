@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledSwiperCarousel = styled.div`
-  /* max-width: 600px; */
   margin: 0 auto;
   margin-top: 5rem;
   border-radius: 15px;
@@ -29,7 +28,7 @@ export const StyledSwiperCarousel = styled.div`
 
   @media (min-width: 1200px) {
     width: 100%;
-    max-width: 1500px;
+    max-width: none;
 
     .slide-img {
       height: 700px;

@@ -90,13 +90,13 @@ export const GlobalStyles = createGlobalStyle`
         }
 
         .pd {
-                padding: 0 8rem;
+                padding: 0 3rem;
             }
     }
 
     @media (min-width: 1400px) {
         .pd {
-                padding: 0 10rem;
+                /* padding: 0 rem; */
             }
     }
     

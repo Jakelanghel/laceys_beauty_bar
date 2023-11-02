@@ -22,7 +22,9 @@ export const StyledNav = styled.nav`
   }
 
   .brand {
-    font-size: 1.15rem;
+    font-family: "Charmonman", cursive;
+
+    font-size: 1.25rem;
     font-weight: 700;
     letter-spacing: 1px;
     color: var(--hot-pink);
@@ -52,7 +54,7 @@ export const StyledNav = styled.nav`
 
   @media screen and (min-width: 1200px) {
     padding: 1rem 2rem;
-    max-width: 1400px;
+    max-width: 1700px;
     margin: 0 auto;
     .container-menu-icon {
       display: none;
@@ -64,6 +66,16 @@ export const StyledNav = styled.nav`
 
     .brand {
       font-size: 1.25rem;
+    }
+  }
+
+  @media screen and (min-width: 1300px) {
+    .eye-icon {
+      width: 50px;
+    }
+
+    .brand {
+      font-size: 1.5rem;
     }
   }
 `;

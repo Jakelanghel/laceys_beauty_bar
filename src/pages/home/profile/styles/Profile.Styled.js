@@ -75,7 +75,7 @@ export const StyledProfile = styled.div`
   }
 
   @media (min-width: 1200px) {
-    max-width: 90%;
+    max-width: 1300px;
 
     .row {
       display: flex;
@@ -90,11 +90,13 @@ export const StyledProfile = styled.div`
     .img-container {
       width: 45%;
       max-width: 500px;
+      margin: 0;
     }
 
     .card {
       width: 45%;
       max-width: 600px;
+      margin: 0;
     }
   }
 `;

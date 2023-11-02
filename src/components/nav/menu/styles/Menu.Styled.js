@@ -51,10 +51,6 @@ export const StyledMenu = styled.div`
     padding: 1rem;
   }
 
-  /* @media screen and (min-width: 950px) {
-    display: none;
-  } */
-
   @media screen and (min-width: 1200px) {
     position: static;
     width: auto;
@@ -70,12 +66,25 @@ export const StyledMenu = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 1.25rem;
+      font-size: 1.35rem;
+      font-weight: 700;
       color: var(--hot-pink);
       text-decoration: none;
       text-transform: capitalize;
       letter-spacing: 4px;
       padding: 1rem 1.5rem;
+    }
+  }
+
+  @media screen and (min-width: 1300px) {
+    .nav-link {
+      font-size: 1.55rem;
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    .nav-link {
+      font-size: 1.65rem;
     }
   }
 `;

@@ -8,9 +8,15 @@ export const StyledServiceContainer = styled.main`
   gap: 5rem;
   padding-bottom: 5rem;
 
-  .container-copy,
+  .container-copy {
+    max-width: 400px;
+  }
   .container-services {
     max-width: 400px;
+  }
+
+  .container-copy,
+  .container-services {
     margin: 0 auto;
     text-align: center;
     border-radius: 15px;
@@ -40,8 +46,6 @@ export const StyledServiceContainer = styled.main`
     text-transform: capitalize;
     width: 300px;
     margin: 0 auto;
-    margin-bottom: 1.5rem;
-    border-bottom: solid 2px var(--hot-pink);
   }
 
   .details {
@@ -82,12 +86,12 @@ export const StyledServiceContainer = styled.main`
 
   @media (min-width: 800px) {
     .container-copy {
+      max-width: 500px;
       padding: 2rem;
     }
   }
 
   @media (min-width: 1200px) {
-    max-width: 1100px;
     margin: 0 auto;
     flex-direction: row;
     align-items: center;
@@ -108,9 +112,7 @@ export const StyledServiceContainer = styled.main`
     .copy-title {
       width: 300px;
       margin: 0 auto;
-      margin-bottom: 1rem;
       padding-bottom: 1rem;
-      border-bottom: solid 2px var(--hot-pink);
     }
 
     .details {
